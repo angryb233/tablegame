@@ -1,0 +1,8 @@
+# 仓库里统一存 LF（Windows 检出也不再被 Git 改行尾 —— 上面那堆 LF→CRLF 警告就是它引起的）
+* text=auto eol=lf
+
+# Disable autocrlf on generated files, they always generate with LF
+# Add any extra files or paths here to make git stop saying they
+# are changed when only line endings change.
+src/generated/**/.cache/* text eol=lf
+src/generated/**/*.json text eol=lf

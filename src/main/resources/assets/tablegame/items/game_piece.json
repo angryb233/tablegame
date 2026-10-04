@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "tablegame:item/game_piece_base",
+    "model": {
+      "type": "tablegame:game_piece"
+    }
+  }
+}

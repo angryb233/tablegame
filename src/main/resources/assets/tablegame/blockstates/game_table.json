@@ -1,0 +1,399 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "tablegame:block/game_table_base"
+      }
+    },
+    {
+      "when": {
+        "north": "false"
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_rail_side",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "south": "false"
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_rail_side",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "west": "false"
+          },
+          {
+            "north": "false"
+          },
+          {
+            "north_west": "false"
+          },
+          {
+            "south": "false"
+          },
+          {
+            "south_west": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_rail_w00",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "west": "false"
+          },
+          {
+            "OR": [
+              {
+                "north": "true"
+              },
+              {
+                "north_west": "true"
+              }
+            ]
+          },
+          {
+            "south": "false"
+          },
+          {
+            "south_west": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_rail_w10",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "west": "false"
+          },
+          {
+            "north": "false"
+          },
+          {
+            "north_west": "false"
+          },
+          {
+            "OR": [
+              {
+                "south": "true"
+              },
+              {
+                "south_west": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_rail_w01",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "west": "false"
+          },
+          {
+            "OR": [
+              {
+                "north": "true"
+              },
+              {
+                "north_west": "true"
+              }
+            ]
+          },
+          {
+            "OR": [
+              {
+                "south": "true"
+              },
+              {
+                "south_west": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_rail_w11",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "east": "false"
+          },
+          {
+            "north": "false"
+          },
+          {
+            "north_east": "false"
+          },
+          {
+            "south": "false"
+          },
+          {
+            "south_east": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_rail_w00",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "east": "false"
+          },
+          {
+            "OR": [
+              {
+                "north": "true"
+              },
+              {
+                "north_east": "true"
+              }
+            ]
+          },
+          {
+            "south": "false"
+          },
+          {
+            "south_east": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_rail_w01",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "east": "false"
+          },
+          {
+            "north": "false"
+          },
+          {
+            "north_east": "false"
+          },
+          {
+            "OR": [
+              {
+                "south": "true"
+              },
+              {
+                "south_east": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_rail_w10",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "east": "false"
+          },
+          {
+            "OR": [
+              {
+                "north": "true"
+              },
+              {
+                "north_east": "true"
+              }
+            ]
+          },
+          {
+            "OR": [
+              {
+                "south": "true"
+              },
+              {
+                "south_east": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_rail_w11",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "north": "false"
+          },
+          {
+            "west": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_leg",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "north": "false"
+          },
+          {
+            "east": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_leg",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "south": "false"
+          },
+          {
+            "east": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_leg",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "south": "false"
+          },
+          {
+            "west": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_leg",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "north": "true"
+          },
+          {
+            "west": "true"
+          },
+          {
+            "north_west": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_corner",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "north": "true"
+          },
+          {
+            "east": "true"
+          },
+          {
+            "north_east": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_corner",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "south": "true"
+          },
+          {
+            "east": "true"
+          },
+          {
+            "south_east": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_corner",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "south": "true"
+          },
+          {
+            "west": "true"
+          },
+          {
+            "south_west": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "tablegame:block/game_table_corner",
+        "y": 270
+      }
+    }
+  ]
+}

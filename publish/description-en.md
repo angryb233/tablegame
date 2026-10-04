@@ -13,3 +13,5 @@ Requires Minecraft **26.1.2** · NeoForge · must be installed on **both client 
 ---
 
 **License**: MIT — use it, modify it, redistribute it, bundle it in modpacks; just keep the copyright notice and this license.
+
+**Source**: [https://github.com/angryb233/tablegame](https://github.com/angryb233/tablegame)

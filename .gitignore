@@ -43,3 +43,6 @@ repo/
 runClient.bat
 runClient-offline.bat
 start_dev_server.bat
+
+# 发布物留在本地（jar 走 GitHub Releases，站点文案本地留档）
+/publish/
